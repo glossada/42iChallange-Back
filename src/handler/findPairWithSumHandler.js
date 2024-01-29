@@ -1,10 +1,15 @@
 const findPairWithSumController = require('../controller/findPairWithSumController')
 
 const findPairWithSumHandler = async(req, res)=>{
-    const {numbers,targetSum}=req.body;
-    console.log(numbers);
+  const numbers = req.query.numbers;
+  const targetSum = req.query.targetSum;
+  const numbersArray = numbers.split(',').map(Number);
+  const targetSumNumber = Number(targetSum);
+    console.log(numbersArray);
+    console.log(targetSumNumber);
     try {
-      const result= findPairWithSumController(numbers, targetSum);
+      const result= findPairWithSumController(numbersArray, targetSumNumber);
+      console.log(result)
       if(!result){
         res.status(400).json('Error: Result not found');
       }else{

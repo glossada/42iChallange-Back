@@ -1,9 +1,10 @@
 const nonConstructibleChangeController = require('../controller/nonConstructibleChangeController')
 
 const nonConstructibleChangeHandler = (req, res) =>{
-    const {coins}=req.body;
+    const coins = req.query.coins;
+    const coinsArray = coins.split(',').map(Number);
     try {
-      const result= nonConstructibleChangeController(coins);
+      const result= nonConstructibleChangeController(coinsArray);
       if(!result){
         res.status(400).json('Error: Result not found');
       }else{

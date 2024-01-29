@@ -1,4 +1,8 @@
 const nonConstructibleChangeController = (coins)=> {
+    if (coins.some(coin => coin < 0)) {
+        throw new Error("The are negative values in the array");
+    }
+
     coins.sort((a, b) => a - b);
 
     let currentChange = 0;
