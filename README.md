@@ -16,7 +16,7 @@ Encontramos el archivo que crea el servidor index.js y el archivo de configuraci
 - **nonConstructibleChange.test.js**
 
 **Utilización Online**
-ingresar al siguiente link**:** 
+ingresar al siguiente link**: <https://42i-challange-front.vercel.app/>**
 
 **Configuración del Entorno (Local)**
 
@@ -65,4 +65,73 @@ Mail: [gabriellossada@gmail.com**](mailto:gabriellossada@gmail.com)**
 
 **GitHub: [https://github.com/glossada/**](https://github.com/glossada/)**
 
-**Portfolio: <https://portfolio-chi-eosin-34.vercel.app/>**
+**Portfolio: <https://portfolio-chi-eosin-34.vercel.app/>
+
+ENGLISH**
+
+
+**General Description**
+
+` `It provides data or services necessary for the page's functionality and unit tests for the main challenge functions. It only has 2 endpoints, **/pairwithSum** and **/nonconstructiblechange**, which receive parameters from the frontend and return the result.
+
+**Project Structure**
+
+` `It contains all files related to the backend built in NodeJS with Express. The file creating the server (index.js) and the test configuration file (jest.config.js) are found. Inside the src folder, server configuration in app.js is present, along with routers containing the configuration for the 2 unique endpoints, as well as handlers and controllers for each endpoint. 
+
+**The challenge exercises are solved in src\controller\findPairWithSumController or nonConstructibleChangeController.**
+
+` `**Tests are located in the tests folder:**
+
+- **findPairWithSum.test.js**
+- **nonConstructibleChange.test.js**
+
+**Online Usage** 
+
+Access the following link: **<https://42i-challange-front.vercel.app/>**
+
+**Local Environment Setup** 
+
+1- Backend.
+
+1. Ensure Node.js is installed.
+1. Navigate to the **42iChallenge-Back** folder and run **npm install** in the terminal to install dependencies.
+1. Run **npm start** to initiate the backend server.
+1. To execute tests, use the **npm test** command.
+
+**Endpoints**
+
+- **/pairwithSum** receives an array of integers and an integer (Target Sum) through a query. The endpoint returns the result of the algorithm executed in the backend, an array containing the 2 numbers whose sum equals the Target Sum, and an empty array if no match is found.
+- **/nonconstructiblechange** receives an array of integers through a query. The endpoint returns the result of the algorithm executed in the backend, an integer representing the smallest change that cannot be formed with the coins from the provided array.
+
+**Dependencies**
+
+`    `**"axios": "^1.6.7",**
+
+`    `**"body-parser": "^1.20.2",**
+
+`    `**"cookie-parser": "^1.4.6",**
+
+`    `**"cors": "^2.8.5",**
+
+`    `**"dotenv": "^16.4.1",**
+
+`    `**"express": "^4.18.2",**
+
+`    `**"morgan": "^1.10.0",**
+
+`    `**"nodemon": "^3.0.3",**
+
+`    `**"pg": "^8.11.3",**
+
+`    `**"sequelize": "^6.35.2"**
+
+**Contact**
+
+**Author: Gabriel Lossada
+Mail: [gabriellossada@gmail.com**](mailto:gabriellossada@gmail.com)**
+
+**LinkedIn: [https://www.linkedin.com/in/glossada/**](https://www.linkedin.com/in/glossada/)**
+
+**GitHub: [https://github.com/glossada/**](https://github.com/glossada/)**
+
+**Portfolio: [https://portfolio-chi-eosin-34.vercel.app/**](https://portfolio-chi-eosin-34.vercel.app/)**
