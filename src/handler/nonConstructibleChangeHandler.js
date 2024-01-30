@@ -1,5 +1,6 @@
 const nonConstructibleChangeController = require('../controller/nonConstructibleChangeController')
 
+//resive de parameters from the query parse them, execute the controller, get the result and response with a status and the result
 const nonConstructibleChangeHandler = (req, res) =>{
     const coins = req.query.coins;
     const coinsArray = coins.split(',').map(Number);

@@ -1,3 +1,6 @@
+
+//here is the logic of the challenge, find whether there's a pair of numbers in the array that adds up to the target sum.
+//Return the pair in an array. If such pair does not exist, return an empty array.
 const findPairWithSumController = (numbers, targetSum) =>{
     const seenNumbers = [];
 
